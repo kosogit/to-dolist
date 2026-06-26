@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 const inputbox = document.getElementById("typebox")
 const btn = document.getElementById("btn")
 const ulist = document.getElementById("to-dolist")
+const toggle = document.getElementById("themetoggle")
 
 let task = JSON.parse(localStorage.getItem("task"))|| [];
 task.forEach((task) => rendertask(task));
@@ -51,4 +52,7 @@ function rendertask(taskit){
 function saveTask(){
     localStorage.setItem('task',JSON.stringify(task))
 }
+toggle.addEventListener('change',() => {
+    document.body.classList.toggle("light")
+});
 })  
