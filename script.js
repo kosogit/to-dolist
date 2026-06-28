@@ -20,7 +20,7 @@ btn.addEventListener("click",()=>{
     saveTask();
     inputbox.value="";
     rendertask(datatext); 
-    console.log(task);
+    
     
 
 })
