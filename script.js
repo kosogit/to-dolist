@@ -55,4 +55,9 @@ function saveTask(){
 toggle.addEventListener('change',() => {
     document.body.classList.toggle("light")
 });
+inputbox.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        btn.click();    // Simulates clicking the Add button
+    }
+});
 })  
